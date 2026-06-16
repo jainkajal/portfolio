@@ -35,6 +35,8 @@ export default function Hero() {
       style={{
         position: 'relative',
         width: '100%',
+        // Mobile-safe viewport units to avoid address-bar / reflow issues
+        minHeight: '100svh',
         height: '100vh',
         overflow: 'hidden',
         display: 'flex',
@@ -150,7 +152,7 @@ export default function Hero() {
           <div className="flex-1 w-full max-w-[400px] lg:max-w-[450px]">
             <div className="glass-card p-0 flex items-center justify-center aspect-square rounded-xl overflow-hidden shadow-2xl" style={{ boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)' }}>
               <img 
-                src="/images/ME.png" 
+                src="/portfolio/images/ME.png" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
                 style={{ imageRendering: 'crisp-edges' }}

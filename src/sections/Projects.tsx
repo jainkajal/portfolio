@@ -8,7 +8,7 @@ const projects = [
   {
     name: 'RSKPay',
     description: 'Fintech mobile app for recharge & utility payments. Published on Google Play Store & Apple App Store.',
-    image: '/images/RSKPay.png',
+    image: '/portfolio/images/RSKPay.png',
     tech: ['React Native', 'Node.js', 'Spring Boot', 'PostgreSQL'],
     metrics: [
       { value: '100K+', label: 'Downloads' },
@@ -19,7 +19,7 @@ const projects = [
   {
     name: 'OnMarQ360',
     description: 'Enterprise HRMS SaaS platform with governance & operational management.',
-    image: '/images/OnMarQ360.png',
+    image: '/portfolio/images/OnMarQ360.png',
     tech: ['React.js', 'Java', 'MySQL', 'REST APIs'],
     metrics: [
       { value: '148K+', label: 'Lines of Code' },
@@ -31,7 +31,7 @@ const projects = [
   {
     name: 'PairPinnacle',
     description: 'AI-powered influencer marketplace connecting creators with brands.',
-    image: '/images/PairPinnacle.png',
+    image: '/portfolio/images/PairPinnacle.png',
     tech: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL'],
     metrics: [
       { value: '5.0★', label: 'Play Store Rating' },

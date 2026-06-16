@@ -98,6 +98,18 @@ function IcosahedronScene() {
 }
 
 export default function CrystallineCore() {
+  // Mobile perf guard: avoid heavy WebGL on small screens
+  const isMobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches;
+
+  // Reduce DPR on mobile to lower GPU/CPU cost
+  const dpr =
+    typeof window !== 'undefined'
+      ? Math.min(window.devicePixelRatio ?? 1, isMobile ? 1 : 2)
+      : 1;
+
+  // For mobile, skip the Canvas entirely (prevents "not loading properly" due to heavy rendering)
+  if (isMobile) return null;
+
   return (
     <div
       style={{
@@ -111,7 +123,7 @@ export default function CrystallineCore() {
     >
       <Canvas
         camera={{ position: [0, 0, 6], fov: 60 }}
-        dpr={Math.min(window.devicePixelRatio, 2)}
+        dpr={dpr}
         gl={{ antialias: true, alpha: true }}
         style={{ background: 'transparent' }}
       >

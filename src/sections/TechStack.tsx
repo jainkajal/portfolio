@@ -8,22 +8,18 @@ const categories = [
   {
     title: 'Languages & Frameworks',
     skills: ['Node.js', 'TypeScript', 'React.js', 'React Native', 'Java', 'Spring Boot', 'Express.js'],
-    image: '/images/languages-frameworks.png',
   },
   {
     title: 'Databases & APIs',
     skills: ['PostgreSQL', 'MySQL', 'REST APIs', 'JWT'],
-    image: '/images/databases-apis.png',
   },
   {
     title: 'State & UI Management',
     skills: ['React Query', 'Zustand', 'Tailwind CSS'],
-    image: '/images/state-ui.png',
   },
   {
     title: 'Tools & Practices',
     skills: ['Git', 'API Design', 'System Design', 'Multi-Tenant Architecture'],
-    image: '/images/tools-practices.png',
   },
 ];
 
