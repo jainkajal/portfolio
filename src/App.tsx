@@ -1,5 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import LoadingScreen from '@/components/LoadingScreen';
+import ErrorBoundary from '@/components/ErrorBoundary';
 import CustomCursor from '@/components/CustomCursor';
 import Navigation from '@/components/Navigation';
 import Hero from '@/sections/Hero';
@@ -50,9 +51,11 @@ function App() {
             pointerEvents: 'none',
           }}
         >
-          <Suspense fallback={null}>
-            <CrystallineCore />
-          </Suspense>
+          <ErrorBoundary>
+            <Suspense fallback={null}>
+              <CrystallineCore />
+            </Suspense>
+          </ErrorBoundary>
         </div>
       )}
 
