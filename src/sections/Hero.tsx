@@ -152,7 +152,8 @@ export default function Hero() {
           <div className="flex-1 w-full max-w-[400px] lg:max-w-[450px]">
             <div className="glass-card p-0 flex items-center justify-center aspect-square rounded-xl overflow-hidden shadow-2xl" style={{ boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)' }}>
               <img 
-                src="/portfolio/images/ME.png" 
+                src={`${import.meta.env.BASE_URL}images/ME.png`} 
+
                 alt="Profile" 
                 className="w-full h-full object-cover"
                 style={{ imageRendering: 'crisp-edges' }}
