@@ -84,6 +84,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
           {/* Text Section */}
           <div className="text-center lg:text-left flex-1">
+            <h1 className="sr-only">Kajal Jain — Software Engineer</h1>
             <QuantumTextReveal
               text="SOFTWARE"
               className="font-display font-bold text-pure-white"
@@ -106,8 +107,8 @@ export default function Hero() {
             <div className="mt-4">
               <TypewriterEngine
                 phrases={[
+                  'Software Engineer |',
                   'Full Stack Developer |',
-                  'Product Engineer |',
                   'Mobile App Developer |',
                   'Backend Engineer |',
                 ]}
