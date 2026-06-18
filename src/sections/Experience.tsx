@@ -17,7 +17,7 @@ const experiences = [
     ],
   },
   {
-    role: 'Software Engineer',
+    role: 'Software Developer Intern',
     company: 'RSK Online Services Pvt. Ltd.',
     period: 'May 2025 – May 2026',
     bullets: [
